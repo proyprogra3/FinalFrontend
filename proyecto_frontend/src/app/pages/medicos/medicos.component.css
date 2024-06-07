@@ -1,0 +1,67 @@
+.card {
+    background-color: #ffffff34; /* Fondo blanco */
+    border: 1px solid rgba(255, 255, 255, 0); /* Borde ligero */
+}
+
+.table-header {
+    background-color: #86bffc8b; /* Fondo azul para cabeceras */
+    color: #fff; /* Texto blanco para cabeceras */
+}
+
+.table-bordered {
+    border: 1px solid rgba(7, 7, 7, 0.125); /* Borde ligero */
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #7179a3; /* Texto negro */
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6; /* Borde superior ligero */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(155, 44, 44, 0.05); /* Fondo gris claro para filas impares */
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075); /* Fondo gris claro al pasar el ratón */
+}
+
+.bg-image {
+    background: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.5), 
+            rgba(255, 255, 255, 0.5)
+        ),
+        url('https://thumbs.dreamstime.com/b/edificio-del-hospital-59693686.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    width: 100%; /* Asegura que el contenedor cubra el ancho completo */
+    height: 100vh; /* Asegura que el contenedor cubra la altura completa de la ventana */
+    display: flex; /* Flexbox para centrar contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.box{
+    background:rgba(250, 255, 250, 0.689);
+    border-radius: 20px;
+     }
+
+
+.table-cell-dark {
+        background-color: rgba(105, 98, 98, 0.1); /* Negro tenue */
+        color: rgba(100, 95, 95, 0.352); /* Color de texto negro */
+    }
+
+#tabla-color{
+    background-color: rgba(20, 107, 213, 0.557);
+
+}

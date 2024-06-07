@@ -1,0 +1,36 @@
+.navbar {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar a {
+    text-decoration: none;
+    color: rgb(176, 176, 176);
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+mat-toolbar button {
+    color: white;
+}
+
+mat-toolbar button:hover,
+mat-toolbar a:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+mat-toolbar mat-icon {
+    margin-right: 10px;
+}

@@ -1,0 +1,48 @@
+<div class="bootstrap-wrappe bg-image">
+    <div class="container">
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-6 offset-md-3 box">
+                <h1 class="text-center">Administración de Citas</h1>
+                <form>
+                    <br>
+                    <table mat-table [dataSource] = "dataSource" class="mat-elevation-z8 table-bordered" id="tabla-color">
+                        <ng-container matColumnDef="id">
+                            <th mat-headet-cell *matHeaderCellDef> ID </th>
+                            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="fechayhora">
+                            <th mat-headet-cell *matHeaderCellDef> FECHA </th>
+                            <td mat-cell *matCellDef="let element"> {{element.fechayhora}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="paciente_id">
+                            <th mat-headet-cell *matHeaderCellDef> PACIENTE </th>
+                            <td mat-cell *matCellDef="let element"> {{element.paciente_id}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="medico_id">
+                            <th mat-headet-cell *matHeaderCellDef> MEDICO </th>
+                            <td mat-cell *matCellDef="let element"> {{element.medico_id}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="estado_cita">
+                            <th mat-headet-cell *matHeaderCellDef> Estado Cita</th>
+                            <td mat-cell *matCellDef="let element"> {{element.estado_cita}} </td>
+                        </ng-container>
+                        
+                        <tr mat-header-row *matHeaderRowDef = "displayColumn"></tr>
+                        <tr mat-row *matRowDef = "let row; columns: displayColumn;"></tr>
+
+                    </table>
+                    <br>
+                    <br>
+                    <div class="container text-center">
+                        <button routerLink="/registro_cita" class=" btn btn-primary">Registrar</button>
+                        <button routerLink="/editar_cita" style="margin-left:20px;" class=" btn btn-primary">Editar</button>
+                        <button routerLink="/eliminar_cita" style="margin-left:20px;" class="btn btn-primary">Eliminar</button>
+                    </div>
+                    
+                </form>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+

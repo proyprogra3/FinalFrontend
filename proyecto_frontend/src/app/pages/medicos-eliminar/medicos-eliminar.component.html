@@ -1,0 +1,25 @@
+<div class="bootstrap-wrapper bg-image">
+    <div class="container">
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-6 offset-md-3 box">
+                <h1 class="text-center neo" style="color: rgb(254, 254, 254); padding-top: 30px;">Eliminar Médico</h1>
+                <form (ngSubmit) = "formSubmit()">
+                    <div class="text-center">
+                    <mat-form-field class="width-50"  appearance="outline">
+                        <mat-label>Id del Médico</mat-label>
+                        <input type="text" [(ngModel)] = "id" name="id" matInput placeholder="Ingrese el ID del médico" style="color:black;">
+                    </mat-form-field>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="container text-center">
+                        <button class="btn btn-primary">Eliminar</button>
+                    </div>
+                </form>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
